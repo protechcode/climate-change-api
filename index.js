@@ -7,3 +7,6 @@ const app = express()
 
 app.listen(PORT, () => console.log(`server runing on port ${PORT}`));
 
+app.get('/', (req, res) => {
+    res.json("Welcome to my Climate Change News API")
+})
